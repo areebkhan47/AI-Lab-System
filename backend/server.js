@@ -13,3 +13,6 @@ app.use('/api/users', userRoutes);
 app.listen(5000, () => {
     console.log('Server running on port 5000');
 });
+
+const labRoutes = require('./routes/labRoutes');
+app.use('/api/labs', labRoutes);
